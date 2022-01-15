@@ -1,0 +1,18 @@
+name: gatekeeper-bot-2000
+
+on: pull_request
+
+jobs:
+  gatekeep:
+    name: CI gatekeeper friend
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Install modules
+        run: npm i
+      - name: Test code
+        run: npm test
+      - name: Validate Types
+        run: npm run tsc
+
