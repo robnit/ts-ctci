@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "new": "sh ./utils/newAlgorithm.sh"
   },
   "author": "Robin Miller <rmillerpdx@gmail.com>",
   "license": "ISC",
@@ -19,5 +20,8 @@
     "@types/jest": "^27.4.0",
     "jest": "^27.4.7",
     "typescript": "^4.5.4"
+  },
+  "jest": {
+    "rootDir": "src/"
   }
 }
